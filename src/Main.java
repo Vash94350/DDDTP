@@ -6,12 +6,22 @@ public class Main {
 
         System.out.println("Hello World!");
         Date date = new Date();
-        Creneau creneauM = new Creneau(date, -1);
-        creneauM.printCreneau();
+        try
+        {
+            Creneau creneauM = new Creneau(date, 1);
+            creneauM.printCreneau();
+            Creneau creneauG = new Creneau(date, 3);
+            creneauG.printCreneau();
+            System.out.println(creneauG.equals(creneauM));
+        }
+        catch (StartHourAfterEndHourException ex)
+        {
+            ex.printStackTrace();
+        }
 
-        Creneau creneauG = new Creneau(date, 1.5);
-        creneauG.printCreneau();
-        System.out.println(creneauG.equals(creneauM));
+
+
+
 
     }
 }
