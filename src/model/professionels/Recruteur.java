@@ -2,7 +2,7 @@ package model.professionels;
 
 import Commun.dto.DTO_Entretien;
 
-public class Recruteur extends Profil
+class Recruteur extends Profil
 {
     public Recruteur(Adresse adresse, Identity identity)
     {

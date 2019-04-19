@@ -1,6 +1,6 @@
 package model.professionels;
 
-enum  Grade
+public enum  Grade
 {
     NULL,
     FAIBLE,

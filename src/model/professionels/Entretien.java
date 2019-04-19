@@ -1,8 +1,9 @@
 package model.professionels;
 
-import Commun.dto.DTO_Entretien;
+import Commun.dto.DTO_Candidat;
+import Commun.dto.DTO_Recruteur;
 
-class Entretien
+public class Entretien
 {
     private StatutsEntretien statut;
     private Creneau creneau;
@@ -10,12 +11,13 @@ class Entretien
     private Candidat candidat;
     private EntretienId entretienId;
 
-    public Entretien(StatutsEntretien statut, Creneau creneau, Recruteur recruteur, Candidat candidat)
+    public Entretien(StatutsEntretien statut, Creneau creneau, DTO_Recruteur recruteur, DTO_Candidat candidat)
     {
         this.statut = statut;
+        this.recruteur.set=recruteur.getNom();
         this.creneau = creneau;
         this.recruteur = recruteur;
-        this.candidat = candidat;
+        this.candidat.getIdentity().setNom(recruteur.getNom());
         this.entretienId=new EntretienId(creneau.getDateToString()+candidat.getIdentity().getNom());
     }
 }

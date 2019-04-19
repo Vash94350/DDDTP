@@ -2,15 +2,15 @@ package Commun.dto;
 
 import model.professionels.*;
 
+import java.util.Date;
+
 public class DTO_Entretien
 {
     private Entretien entretien;
-    private StatutsEntretien_dto statut;
-    private Creneau creneau;
-    private Recruteur recruteur;
-    private Candidat candidat;
+    private DTO_Recruteur recruteur;
+    private DTO_Candidat candidat;
 
-    public DTO_Entretien(StatutsEntretien_dto statut, Creneau creneau, Recruteur recruteur, Candidat candidat)
+    public DTO_Entretien(StatutsEntretien statut, double duration, Date date, DTO_Recruteur recruteur, DTO_Candidat candidat)
     {
         this.statut = statut;
         this.creneau = creneau;
@@ -18,7 +18,7 @@ public class DTO_Entretien
         this.candidat = candidat;
     }
 
-    public StatutsEntretien_dto getStatut()
+    public StatutsEntretien getStatut()
     {
         return statut;
     }
