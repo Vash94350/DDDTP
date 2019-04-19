@@ -6,7 +6,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Objects;
 
-public class Creneau
+class Creneau
 {
     private Date date;
     private String startHour;

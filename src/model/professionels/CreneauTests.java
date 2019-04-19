@@ -24,17 +24,17 @@ public class CreneauTests {
         }
     }
 
-    @Test(expected = ARecruteurRHCannotUpgradeHimSelf.class)
-    public final void recruteurRHSuiviCannotUpgradeHimself() throws ARecruteurRHCannotUpgradeHimSelf
-    {
-        RecruteurRHSuivi recruteurRHSuivi=new RecruteurRHSuivi(new Adresse(),new Identity());
-        try
-        {
-            recruteurRHSuivi.changerGradeSalarie(recruteurRHSuivi,Grade.VRAIMENT_BALAIZE);
-        }
-        catch (ARecruteurRHCannotUpgradeHimSelf aRecruteurRHCannotUpgradeHimSelf)
-        {
-            fail("AAARH nein");
-        }
-    }
+//    @Test(expected = ARecruteurRHCannotUpgradeHimSelf.class)
+//    public final void recruteurRHSuiviCannotUpgradeHimself() throws ARecruteurRHCannotUpgradeHimSelf
+//    {
+//        RecruteurRHSuivi recruteurRHSuivi=new RecruteurRHSuivi(new Adresse(),new Identity());
+//        try
+//        {
+//            recruteurRHSuivi.changerGradeSalarie(recruteurRHSuivi,Grade.VRAIMENT_BALAIZE);
+//        }
+//        catch (ARecruteurRHCannotUpgradeHimSelf aRecruteurRHCannotUpgradeHimSelf)
+//        {
+//            fail("AAARH nein");
+//        }
+//    }
 }

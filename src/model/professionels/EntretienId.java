@@ -1,6 +1,6 @@
 package model.professionels;
 
-public class EntretienId
+class EntretienId
 {
     String value;
 

@@ -4,7 +4,7 @@ class Profil
 {
     private Adresse adresse;
     private Identity identity;
-    private Grade grade;
+    private Grade grade;//todelete
 
     public Profil(Adresse adresse, Identity identity, Grade grade)
     {
