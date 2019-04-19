@@ -1,6 +1,6 @@
-package model.professionels;
+package Commun.dto;
 
-enum StatutsEntretien
+enum StatutsEntretien_dto
 {
     PROPOSED,
     ACCEPTED,

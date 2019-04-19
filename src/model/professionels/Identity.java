@@ -2,7 +2,7 @@ package model.professionels;
 
 import java.util.Date;
 
-public class Identity
+class Identity
 {
     private String nom;
     private Date dateDeNaissance;
