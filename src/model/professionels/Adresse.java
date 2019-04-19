@@ -1,6 +1,6 @@
 package model.professionels;
 
-public class Adresse
+class Adresse
 {
     private String nomDeRue;
     private String numero;

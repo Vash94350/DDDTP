@@ -1,6 +1,8 @@
 package model.professionels;
 
-public class Entretien
+import Commun.dto.DTO_Entretien;
+
+class Entretien
 {
     private StatutsEntretien statut;
     private Creneau creneau;
