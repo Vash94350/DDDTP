@@ -1,4 +1,6 @@
-public class Profil
+package model.professionels;
+
+class Profil
 {
     private Adresse adresse;
     private Identity identity;

@@ -1,3 +1,5 @@
+package model.professionels;
+
 public class Adresse
 {
     private String nomDeRue;

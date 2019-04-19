@@ -1,3 +1,5 @@
+package model.professionels;
+
 import Exeption.ARecruteurRHCannotUpgradeHimSelf;
 
 public class RecruteurRHSuivi extends RecruteurRH

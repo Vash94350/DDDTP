@@ -1,3 +1,5 @@
+package model.professionels;
+
 public class Recruteur extends Profil
 {
     public Recruteur(Adresse adresse, Identity identity)

@@ -1,3 +1,5 @@
+package model.professionels;
+
 public enum  Grade
 {
     NULL,
