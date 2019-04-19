@@ -1,3 +1,5 @@
+package model.professionels;
+
 import Exeption.StartHourAfterEndHourException;
 import Exeption.ARecruteurRHCannotUpgradeHimSelf;
 import org.junit.Test;

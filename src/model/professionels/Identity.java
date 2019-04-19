@@ -1,3 +1,5 @@
+package model.professionels;
+
 import java.util.Date;
 
 public class Identity
