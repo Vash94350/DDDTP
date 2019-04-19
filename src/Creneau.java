@@ -1,3 +1,5 @@
+import Exeption.StartHourAfterEndHourException;
+
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Objects;
@@ -10,19 +12,14 @@ public class Creneau {
 
     SimpleDateFormat sdf = new SimpleDateFormat("HH:mm:ss");
 
-    public Creneau(Date date, double duration) throws StartHourAfterEndHourException{
-
-        try {
-            if(duration < 0)
-                throw new StartHourAfterEndHourException("La durée du créneau ne peut pas être négative.");
-            this.date = date;
-            this.startHour = sdf.format(date);
-            this.endHour = sdf.format(date.getTime() + duration*3600000);
-            this.duration = duration;
-        }
-        catch (StartHourAfterEndHourException ex) {
-            ex.printStackTrace();
-        }
+    public Creneau(Date date, double duration) throws StartHourAfterEndHourException
+    {
+        if(duration < 0)
+            throw new StartHourAfterEndHourException("La durée du créneau ne peut pas être négative.");
+        this.date = date;
+        this.startHour = sdf.format(date);
+        this.endHour = sdf.format(date.getTime() + duration*3600000);
+        this.duration = duration;
     }
 
     public void printCreneau() {
