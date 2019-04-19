@@ -15,4 +15,9 @@ public class Profil
     {
         this.grade=grade;
     }
+
+    public Identity getIdentity()
+    {
+        return identity;
+    }
 }
