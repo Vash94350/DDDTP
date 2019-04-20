@@ -1,6 +1,6 @@
 package model.professionels;
 
-enum StatutsEntretien
+public enum StatutsEntretien
 {
     PROPOSED,
     ACCEPTED,
