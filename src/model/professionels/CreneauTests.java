@@ -21,7 +21,7 @@ public class CreneauTests {
         }
         catch (StartHourAfterEndHourException ex)
         {
-            throw new StartHourAfterEndHourException("gééééééééééééééééééé");
+            throw new StartHourAfterEndHourException("");
         }
     }
 
@@ -32,7 +32,7 @@ public class CreneauTests {
         RecruteurRHSuivi recruteurRHSuivi=new RecruteurRHSuivi(new Adresse(),new Identity());
         try
         {
-            recruteurRHSuivi.changerGradeSalarie(recruteurRHSuivi,Grade.VRAIMENT_BALAIZE);
+            recruteurRHSuivi.changerGradeSalarie(recruteurRHSuivi,model.professionels.Grade.VRAIMENT_BALAIZE);
         }
         catch (ARecruteurRHCannotUpgradeHimSelf aRecruteurRHCannotUpgradeHimSelf)
         {
@@ -76,6 +76,6 @@ public class CreneauTests {
         //Recruteur recruteurMoyen = new Recruteur(adresseRecruteur, );
         //Recruteur unMecBaleze = new Recruteur(adresseRecruteur, );
 
-        //unMecBaleze.updateGrade(recruteurMoyen, Grade.FORT);
+        //unMecBaleze.updateGrade(recruteurMoyen, model.professionels.Grade.FORT);
     }
 }
